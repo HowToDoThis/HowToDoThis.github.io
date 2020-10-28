@@ -26,6 +26,7 @@
       <a href="#" onclick="return updatePage('Home')" class="navBtn active"><span>Home</span></a>
       <a href="#" onclick="return updatePage('News')" class="navBtn" ><span>News</span></a>
       <a href="#" onclick="return updatePage('Project')" class="navBtn"><span>Project</span></a>
+      <a href="#" onclick="return updatePage('Donate')" class="navBtn"><span>Donate</span></a>
       <a href="#" onclick="return updatePage('About')" class="navBtn"><span>About</span></a>
       
       <a href="javascript:void(0);" class="icon" onclick="dummyFunc()">
@@ -34,13 +35,36 @@
     </nav>
 
     <div class="page" id="Home">
-      <h1>Hello World!</h1>
+      
+      <h1>Bello! Welcome To Xein(NekoMeow) Personal Website</h1>
 
       <p>I'm hosted with Github Pages.</p>
     </div>
 
     <div style="display:none" class="page" id="News">
-      Test
+      <h1>News</h1>
+      <p style="color: gray;">Time may be incorrect, but using git push time as standard</p>
+
+      <ul>
+        <li>28 October 2020</li>
+        <ul>
+          <li>More Improve on Styles, Visuals, Navigator and more.</li>
+        </ul>
+
+        <li>27 October 2020</li>
+        <ul>
+          <li>Improve on Layout, UI, UX and more</li>
+        </ul>
+
+        <li>26 October 2020</li>
+        <ul>
+          <li>Created This Website</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div style="display:none" class="page" id="Project">
+
     </div>
 
     <div style="display:none" class="page" id="Project">
@@ -70,8 +94,10 @@
   </body>
 
   <footer>
-    <p>Thanks To Github Hosting This Website!</p>
-    <p>By NekoMeow</p>
+    <div style="position: relative;">
+      <p style="position: fixed; width:100%; bottom: 14px;">Thanks To Github Hosting This Website!</p>
+      <p style="position: fixed; width:100%; bottom: 0;">By NekoMeow</p>  
+    </div>
   </footer>
 
 </html>
