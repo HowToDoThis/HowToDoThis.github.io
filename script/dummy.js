@@ -1,3 +1,5 @@
+"use strict";
+
 function dummyFunc()
 {
     var x = document.getElementById("topNav");

@@ -41,25 +41,25 @@
     transition: 0.4s;
 }
 
-.topnav a:hover
+.topnav a.navBtn:hover
 {
     transition-duration: 0.4s;
     background-color: dodgerblue;
     color: white;
 }
 
-.topnav a:hover span
+.topnav a.navBtn:hover span
 {
     padding-right: 25px;
 }
 
-.topnav a:hover span::after
+.topnav a.navBtn:hover span::after
 {
     opacity: 1;
     right: 0;
 }
 
-.topnav a:active
+.topnav a.navBtn.active
 {
     background-color: dodgerblue;
     color: white;
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 600px)
 {
-    .topnav a:not(:first-child)
+    .topnav a.navBtn:not(:first-child)
     {
         display: none;
     }
@@ -95,7 +95,7 @@
         top: 0;
     }
 
-    .topnav.responsive a
+    .topnav.responsive a.navBtn
     {
         float: none;
         display: block;
