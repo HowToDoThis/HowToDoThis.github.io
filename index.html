@@ -17,34 +17,21 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     
-    <script>
-      function myFunction()
-      {
-        var x = document.getElementById("topNav");
-        if (x.className == "topnav")
-        {
-          x.className += " responsive";
-        }
-        else
-        {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <script src="script/dummy.js"></script>
   </head>
 
   <body>
-    <div class="topnav" id="topNav">
+    <nav class="topnav" id="topNav">
       <a href="/" class="active"><span>Home</span></a>
       <a href="news.html"><span>News</span></a>
       <a href="project.html"><span>Project</span></a>
       <a href="about.html"><span>About</span></a>
       
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="dummyFunc()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
-
+    </nav>
+    
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
 
