@@ -1,11 +1,11 @@
 body
 {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 footer
 {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0;
     text-align: center;
     opacity: 50%;
