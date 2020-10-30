@@ -1,5 +1,6 @@
-body
+body, html
 {
+    height: 100%;
     background-color: #484848;
     color: white;
     font-family: "Comic Sans MS", "Comic Neue", cursive;
@@ -15,8 +16,21 @@ footer
     text-shadow: 1px 1px 2px gray ;
 }
 
+hr {
+    margin: auto;
+    width: 40%;
+}
+
 a {
     color: white;
+}
+
+.xein-wip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .xein-add {
@@ -28,7 +42,7 @@ a {
 }
 
 .xein-remove {
-    color: red;
+    color: lightcoral;
 }
 
 .page

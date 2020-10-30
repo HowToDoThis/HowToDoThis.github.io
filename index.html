@@ -58,9 +58,13 @@
         <li>31 October 2020</li>
         <ul class="xein-add">
           <li>Add Color Scheme?</li>
+          <li>Add Work-In-Progress Status?</li>
         </ul>
         <ul class="xein-fix">
           <li>Fix Footer Hide by Script</li>
+        </ul>
+        <ul class="xein-remove">
+          <li>This is Remove Test</li>
         </ul>
 
         <li>28 October 2020</li>
@@ -88,16 +92,26 @@
       </ul>
     </div>
 
-    <div style="display: none" class="page" id="Donate">
-
+    <div style="display: none" class="page xein-wip" id="Donate">
+      <h1>Work-In-Progress</h1>
+      <hr>
+      <p id="estimateDate1" style="font-size: 24px;">-1s</p>
     </div>
 
-    <div style="display: none;" class="page" id="Server">
+    <div style="display: none;" class="page xein-wip" id="Server">
       <p>Server List:</p>
+      <br>
+
+      <h1>Work-In-Progress</h1>
+      <hr>
+      <p id="estimateDate2" style="font-size: 24px;">-1s</p>
+
     </div>
 
-    <div style="display: none" class="page" id="About">
-
+    <div style="display: none" class="page xein-wip" id="About">
+      <h1>Work-In-Progress</h1>
+      <hr>
+      <p id="estimateDate3" style="font-size: 24px;">-1s</p>
     </div>
    
     <!-- Active Button -->
@@ -114,6 +128,43 @@
           this.className += " active";
         });
       }
+    </script>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Nov 4, 2020 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var countdownfunction = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+        
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Output the result in an element with id="demo"
+        document.getElementById("estimateDate1").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        document.getElementById("estimateDate2").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        document.getElementById("estimateDate3").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(countdownfunction);
+          document.getElementById("estimateDate1").innerHTML = "EXPIRED - Contact Owner if still no updating?";
+          document.getElementById("estimateDate2").innerHTML = "EXPIRED - Contact Owner if still no updating?";
+          document.getElementById("estimateDate3").innerHTML = "EXPIRED - Contact Owner if still no updating?";
+        }
+      }, 1000);
     </script>
 
   </body>
