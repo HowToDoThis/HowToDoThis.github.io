@@ -27,6 +27,7 @@
       <a href="#" onclick="return updatePage('Home')" class="navBtn active"><span>Home</span></a>
       <a href="#" onclick="return updatePage('News')" class="navBtn" ><span>News</span></a>
       <a href="#" onclick="return updatePage('Project')" class="navBtn"><span>Project</span></a>
+      <a href="#" onclick="return updatePage('Server')" class="navBtn"><span>Server</span></a>
       <a href="#" onclick="return updatePage('Donate')" class="navBtn"><span>Donate</span></a>
       <a href="#" onclick="return updatePage('About')" class="navBtn"><span>About</span></a>
       
@@ -39,42 +40,63 @@
       
       <h1>Bello! Welcome To Xein(NekoMeow) Personal Website</h1>
 
-      <p>Personal Profile Link: <a href="https://github.com/HowToDoThis">Here</a></p>
+      <p>Personal Profile Link:</p>
+      <ul>
+        <li>Github <a href="https://github.com/HowToDoThis"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"/></a></li>
+        <li>Telegram <a href="https://t.me/NekoMeow0708"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/telegram.svg"/></a></li>
+      </ul>
 
+      <br>
       <p>I'm hosted with Github Pages.</p>
     </div>
 
     <div style="display:none" class="page" id="News">
       <h1>News</h1>
-      <p style="color: gray;">Time may be incorrect, but using git push time as standard</p>
+      <p style="opacity: 50%;">Time may be incorrect, but using git push time as standard</p>
 
       <ul>
+        <li>31 October 2020</li>
+        <ul class="xein-add">
+          <li>Add Color Scheme?</li>
+        </ul>
+        <ul class="xein-fix">
+          <li>Fix Footer Hide by Script</li>
+        </ul>
+
         <li>28 October 2020</li>
-        <ul>
+        <ul class="xein-fix">
           <li>More Improve on Styles, Visuals, Navigator and more.</li>
         </ul>
 
         <li>27 October 2020</li>
-        <ul>
+        <ul class="xein-fix">
           <li>Improve on Layout, UI, UX and more</li>
         </ul>
 
         <li>26 October 2020</li>
-        <ul>
+        <ul class="xein-add">
           <li>Created This Website</li>
         </ul>
       </ul>
     </div>
 
-    <div style="display:none" class="page" id="Project">
+    <div style="display: none" class="page" id="Project">
+      <p>View it at:</p>
+
+      <ul>
+        <li><a href="https://github.com/HowToDoThis?tab=repositories">Github <img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"/></a></li>
+      </ul>
+    </div>
+
+    <div style="display: none" class="page" id="Donate">
 
     </div>
 
-    <div style="display:none" class="page" id="Project">
-
+    <div style="display: none;" class="page" id="Server">
+      <p>Server List:</p>
     </div>
 
-    <div style="display:none" class="page" id="About">
+    <div style="display: none" class="page" id="About">
 
     </div>
    
@@ -97,10 +119,10 @@
   </body>
 
   <footer>
-    <div style="position: relative;">
+    <ul style="position: relative;">
       <p style="position: fixed; width:100%; bottom: 14px;">Thanks To Github Hosting This Website!</p>
       <p style="position: fixed; width:100%; bottom: 0;">By NekoMeow</p>  
-    </div>
+    </ul>
   </footer>
 
 </html>

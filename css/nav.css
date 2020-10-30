@@ -1,7 +1,6 @@
 .topnav
 {
     border-radius: 12px;
-    background-color: lightgray;
     overflow: hidden;
     list-style-type: none;
     margin: 0;
@@ -12,13 +11,15 @@
 {
     transition-duration: 0.4s;
 
-    float: left;
+    float: left;    
     display: block;
-    color: black;
+    
+    color: white;
 
     text-align: center;
     text-decoration: none;
 
+    border-radius: 12px;
     padding: 14px 16px;
     font-size: 18px;
 }
