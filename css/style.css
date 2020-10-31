@@ -2,17 +2,27 @@
     font-family: "Noto Sans SC", "Comic Neue", cursive;
 }
 
-body, html {
-    height: 100%;
-    background-color: #484848;
-    color: white;
+html {
     font-family: "Comic Sans MS", "Comic Neue", cursive;
 }
 
+header {
+    min-height: 48px;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    background-color: #484848;
+    color: white;
+}
+
 footer {
-    font-family: "Comic Sans MS", "Comic Neue", cursive;
-    margin: 0;
+    clear: both;
+    position: relative;
+
     text-align: center;
+    
     opacity: 50%;
     font-size: 12px;
     text-shadow: 1px 1px 2px gray ;

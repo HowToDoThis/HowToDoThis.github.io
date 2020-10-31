@@ -1,7 +1,9 @@
 .topnav {
     border-radius: 12px;
+
     overflow: hidden;
     list-style-type: none;
+
     margin: 0;
     padding: 0;
 }
@@ -66,7 +68,7 @@
     float: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .topnav a.navBtn:not(:first-child) {
         display: none;
     }
