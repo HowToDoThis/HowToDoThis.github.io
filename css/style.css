@@ -1,9 +1,9 @@
 .chinese {
-    font-family: "Noto Sans SC", "Comic Neue", cursive;
+    font-family: "Noto Sans SC", "Noto Sans", cursive;
 }
 
 html {
-    font-family: "Comic Sans MS", "Comic Neue", cursive;
+    font-family: "Comic Sans MS", "Noto Sans", cursive;
 }
 
 header {

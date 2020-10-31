@@ -9,8 +9,7 @@
     <meta name="author" content="Xein">
     <meta name="description" content="Welcome To Xein Profile Page">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic%20Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
     
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,6 +19,11 @@
     
     <script src="script/dummy.js"></script>
     <script src="script/updatePage.js"></script>
+
+    <script>
+      var lang = navigator.language;
+    </script>
+
   </head>
 
   <header>
@@ -30,7 +34,7 @@
       <a href="#" onclick="return updatePage('Server')" class="navBtn"><span>Server</span></a>
       <a href="#" onclick="return updatePage('Donate')" class="navBtn"><span>Donate</span></a>
       <a href="#" onclick="return updatePage('About')" class="navBtn"><span>About</span></a>
-      <a href="zh-cn/" class="navBtn language"><span>中文 | Chinese (Simplified)</span></a>
+      <a href="zh-CN/" class="navBtn language"><span>中文 | Chinese (Simplified)</span></a>
 
       <a href="javascript:void(0);" class="icon" onclick="dummyFunc()">
         <i class="fa fa-bars"></i>
@@ -95,7 +99,7 @@
     </div>
 
     <div style="display: none" class="page xein-wip" id="Donate">
-      <h1>Work-In-Progress</h1>
+      <h1>Under Construction</h1>
       <hr>
       <p id="estimateDate1" style="font-size: 24px;">-1s</p>
     </div>
@@ -104,7 +108,7 @@
       <p>Server List:</p>
       <br>
 
-      <h1>Work-In-Progress</h1>
+      <h1>Under Construction</h1>
       <hr>
       <p id="estimateDate2" style="font-size: 24px;">-1s</p>
 
@@ -113,8 +117,8 @@
     <div style="display: none" class="page" id="About">
       <p>Contact me at:</p>
       <ul>
-        <li>Github <a href="https://github.com/HowToDoThis"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"/></a></li>
-        <li>Telegram <a href="https://t.me/NekoMeow0708"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/telegram.svg"/></a></li>
+        <li><a href="https://github.com/HowToDoThis">Github<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"/></a></li>
+        <li><a href="https://t.me/NekoMeow0708">Telegram<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/telegram.svg"/></a></li>
       </ul>
     </div>
    
