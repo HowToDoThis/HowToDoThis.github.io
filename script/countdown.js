@@ -21,8 +21,6 @@ var countdownfunction = setInterval(function()
     + m + "m " + s + "s";
     document.getElementById("estimateDate2").innerHTML = d + "d " + h + "h "
     + m + "m " + s + "s";
-    document.getElementById("estimateDate3").innerHTML = d + "d " + h + "h "
-    + m + "m " + s + "s";
   
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -30,6 +28,5 @@ var countdownfunction = setInterval(function()
 
         document.getElementById("estimateDate1").innerHTML = "EXPIRED - Contact Owner if still no updating?";
         document.getElementById("estimateDate2").innerHTML = "EXPIRED - Contact Owner if still no updating?";
-        document.getElementById("estimateDate3").innerHTML = "EXPIRED - Contact Owner if still no updating?";
   }
 }, 1000);

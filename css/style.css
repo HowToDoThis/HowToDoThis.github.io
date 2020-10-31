@@ -1,3 +1,7 @@
+.chinese{
+    font-family: "Noto Sans SC", "Comic Neue", cursive;
+}
+
 body, html
 {
     height: 100%;
