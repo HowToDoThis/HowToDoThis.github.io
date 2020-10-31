@@ -2,8 +2,7 @@
 var countDownDate = new Date("Nov 10, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
-var countdownfunction = setInterval(function()
-{
+var countdownfunction = setInterval(function() {
     // Get todays date and time
     var now = new Date().getTime();
   

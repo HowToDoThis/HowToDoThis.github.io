@@ -1,17 +1,15 @@
-.chinese{
+.chinese {
     font-family: "Noto Sans SC", "Comic Neue", cursive;
 }
 
-body, html
-{
+body, html {
     height: 100%;
     background-color: #484848;
     color: white;
     font-family: "Comic Sans MS", "Comic Neue", cursive;
 }
 
-footer
-{
+footer {
     font-family: "Comic Sans MS", "Comic Neue", cursive;
     margin: 0;
     text-align: center;
@@ -37,8 +35,7 @@ a {
     text-align: center;
 }
 
-.page
-{
+.page {
     padding: 8px 8px;
     
     animation: fadeIn ease 0.5s;
@@ -60,62 +57,47 @@ a {
     color: lightcoral;
 }
 
-@keyframes fadeIn
-{
-    0%
-    {
-        opacity:0;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    100%
-    {
-        opacity:1;
+    100% {
+        opacity: 1;
     }
 }
 
-@-moz-keyframes fadeIn
-{
-    0%
-    {
-        opacity:0;
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    100%
-    {
-        opacity:1;
+    100% {
+        opacity: 1;
     }
 }
 
-@-webkit-keyframes fadeIn
-{
-    0%
-    {
-        opacity:0;
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    100%
-    {
-        opacity:1;
+    100% {
+        opacity: 1;
     }
 }
 
-@-o-keyframes fadeIn
-{
-    0%
-    {
-        opacity:0;
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    100%
-    {
-        opacity:1;
+    100% {
+        opacity: 1;
     }
 }
 
-@-ms-keyframes fadeIn
-{
-    0%
-    {
-        opacity:0;
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    100%
-    {
-        opacity:1;
+    100% {
+        opacity: 1;
     }
 }

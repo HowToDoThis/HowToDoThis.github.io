@@ -1,5 +1,4 @@
-.topnav
-{
+.topnav {
     border-radius: 12px;
     overflow: hidden;
     list-style-type: none;
@@ -7,8 +6,7 @@
     padding: 0;
 }
 
-.topnav a
-{
+.topnav a {
     transition-duration: 0.4s;
 
     float: left;    
@@ -24,16 +22,14 @@
     font-size: 18px;
 }
 
-.topnav span
-{
+.topnav span {
     transition: 0.4s;
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
-.topnav span::after
-{
+.topnav span::after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -42,64 +38,65 @@
     transition: 0.4s;
 }
 
-.topnav a.navBtn:hover
-{
+.topnav a.navBtn:hover {
     transition-duration: 0.4s;
     background-color: dodgerblue;
     color: white;
 }
 
-.topnav a.navBtn:hover span
-{
+.topnav a.navBtn:hover span {
     padding-right: 25px;
 }
 
-.topnav a.navBtn:hover span::after
-{
+.topnav a.navBtn:hover span::after {
     opacity: 1;
     right: 0;
 }
 
-.topnav a.navBtn.active
-{
+.topnav a.navBtn.active {
     background-color: dodgerblue;
     color: white;
 }
 
-.topnav .icon
-{
+.topnav .icon {
     display: none;
 }
 
-@media screen and (max-width: 600px)
-{
-    .topnav a.navBtn:not(:first-child)
-    {
+.topnav a.navBtn.language {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a.navBtn:not(:first-child) {
         display: none;
     }
 
-    .topnav a.icon
-    {
+    .topnav a.icon {
         float: right;
         display: block;
     }
 
-    .topnav.responsive
-    {
+    .topnav.responsive {
         position: relative;
     }
 
-    .topnav.responsive a.icon
-    {
+    .topnav.responsive a.navBtn.language {
+        float: right;
+    }
+
+    .topnav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    .topnav.responsive a.navBtn
-    {
+    .topnav.responsive a.navBtn {
         float: none;
         display: block;
         text-align: left;
+    }
+
+    .topnav.responsive a.navBtn.language{
+        float: none;
     }
 }

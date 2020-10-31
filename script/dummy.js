@@ -1,14 +1,8 @@
-"use strict";
-
-function dummyFunc()
-{
+function dummyFunc() {
     var x = document.getElementById("topNav");
-    if (x.className == "topnav")
-    {
+    if (x.className == "topnav") {
         x.className += " responsive";
-    }
-    else
-    {
+    } else {
         x.className = "topnav";
     }
 }

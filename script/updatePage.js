@@ -1,10 +1,7 @@
-"use strict";
-
-function updatePage(show)
-{
+function updatePage(show) {
     var divs = document.getElementsByTagName('div');
-    for (let i = 0; i < divs.length; i++)
-    {
+    
+    for (let i = 0; i < divs.length; i++) {
         const e = divs[i];
         e.style.display= 'none';
     }
