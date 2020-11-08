@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 10, 2020 00:00:00").getTime();
+var countDownDate = new Date("Nov 8, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -23,9 +23,7 @@ var countdownfunction = setInterval(function() {
   
     // If the count down is over, write some text 
     if (distance < 0) {
-        clearInterval(countdownfunction);
-
-        document.getElementById("estimateDate1").innerHTML = "EXPIRED - Contact Owner if still no updating?";
-        document.getElementById("estimateDate2").innerHTML = "EXPIRED - Contact Owner if still no updating?";
+        document.getElementById("estimateDate1").innerHTML = "OVER ESTIMATED TIME! <br> " + d + "d " + h + "h " + m + "m " + s + "s" + "<br> Confirm with the owner whether there are no changes?";
+        document.getElementById("estimateDate2").innerHTML = "OVER ESTIMATED TIME! <br> " + d + "d " + h + "h " + m + "m " + s + "s" + "<br> Confirm with the owner whether there are no changes?";
   }
 }, 1000);

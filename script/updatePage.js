@@ -6,6 +6,9 @@ function updatePage(show) {
         e.style.display= 'none';
     }
 
+    // update title
+    document.title = show + " - Xein"
+
     // remove class page
     var e = document.getElementById(show);
     e.classList.remove("page");

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TimeBurner';
+    font-style: normal;
+    font-weight: 400;
+    src: local('TimeBurner'), url(../fonts/timeburner.ttf)
+}
+
+@font-face {
+    font-family: 'TimeBurner Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('TimeBurner Bold'), url(../fonts/timeburner-bold.ttf)
+}
