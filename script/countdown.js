@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 8, 2020 00:00:00").getTime();
+var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -16,14 +16,14 @@ var countdownfunction = setInterval(function() {
     var s = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Output the result in an element with id="demo"
-    document.getElementById("estimateDate1").innerHTML = d + "d " + h + "h "
-    + m + "m " + s + "s";
-    document.getElementById("estimateDate2").innerHTML = d + "d " + h + "h "
-    + m + "m " + s + "s";
+    var time = d + "d " + h + "h " + m + "m " + s + "s";
+    document.getElementById("estimateDate1").innerHTML = time
+    document.getElementById("estimateDate2").innerHTML = time
   
+    var msg = "OVER ESTIMATED TIME! <br> " + time + "<br> Confirm with the owner whether there are no changes?";
     // If the count down is over, write some text 
     if (distance < 0) {
-        document.getElementById("estimateDate1").innerHTML = "OVER ESTIMATED TIME! <br> " + d + "d " + h + "h " + m + "m " + s + "s" + "<br> Confirm with the owner whether there are no changes?";
-        document.getElementById("estimateDate2").innerHTML = "OVER ESTIMATED TIME! <br> " + d + "d " + h + "h " + m + "m " + s + "s" + "<br> Confirm with the owner whether there are no changes?";
+        document.getElementById("estimateDate1").innerHTML = msg;
+        document.getElementById("estimateDate2").innerHTML = msg;
   }
 }, 1000);

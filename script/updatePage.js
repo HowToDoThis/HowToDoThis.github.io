@@ -1,8 +1,8 @@
 function updatePage(show) {
-    var divs = document.getElementsByTagName('div');
+    var items = document.getElementsByTagName('section');
     
-    for (let i = 0; i < divs.length; i++) {
-        const e = divs[i];
+    for (let i = 0; i < items.length; i++) {
+        const e = items[i];
         e.style.display= 'none';
     }
 
