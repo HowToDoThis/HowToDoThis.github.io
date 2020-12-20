@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,103 +11,146 @@
 
     <title>Home - Xein</title>
 
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
     
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <!-- UIKit v3 -->
+    <link rel="stylesheet" href="assets/uikit/uikit.min.css" />
+    <script src="assets/uikit/uikit.min.js"></script>
+    <script src="assets/uikit/uikit-icons.min.js"></script>
+
+    <!-- Bootstrap v5.beta1 -->
+    <link href="assets/bootstrapv5/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/bootstrapv5/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    
+
     <script src="script/dummy.js"></script>
     <script src="script/updatePage.js"></script>
 
   </head>
 
-  <header>
-    <nav class="topnav" id="topNav">
-      <a href="#" onclick="return updatePage('Home')" class="navBtn active"><span>Home</span></a>
-      <a href="#" onclick="return updatePage('News')" class="navBtn" ><span>News</span></a>
-      <a href="#" onclick="return updatePage('Project')" class="navBtn"><span>Project</span></a>
-      <a href="#" onclick="return updatePage('Game')" class="navBtn"><span>Game</span></a>
-      <a href="#" onclick="return updatePage('Server')" class="navBtn"><span>Server</span></a>
-      <a href="#" onclick="return updatePage('Donate')" class="navBtn"><span>Donate</span></a>
-      <a href="#" onclick="return updatePage('About')" class="navBtn"><span>About</span></a>
-      <a href="zh-CN/" class="navBtn language"><span>中文 | Chinese (Simplified)</span></a>
+  <body class="d-flex flex-column h-100 bg-dark text-white">
+    <!-- Header -->
+    <header>
+      <nav id="navbarMain" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navbarTitle" href="#">Xein</a>
 
-      <a href="javascript:void(0);" class="icon" onclick="dummyFunc()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-  </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <body>
+          <!-- Front -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item active">
+                <a href="#" onclick="return updatePage('Home')" class="nav-link" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="return updatePage('News')" class="nav-link" >News</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="return updatePage('Project')" class="nav-link">Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="return updatePage('Game')" class="nav-link">Game</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="return updatePage('Server')" class="nav-link">Server</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="return updatePage('Donate')" class="nav-link">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="return updatePage('About')" class="nav-link">About</a>
+              </li>
+            </ul>
+
+            <!-- End -->
+            <form class="navbar-nav d-flex">
+              <a href="zh-CN/" class="nav-link language">中文 | Chinese (Simplified)</a>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
     <section style="display: block" class="page" id="Home">
       <h1>Bello! Welcome To Xein(NekoMeow) Personal Website</h1>
       <br>
       
-      <p>I'm hosted with <strong>Github Pages</strong>.</p>
+      <p>I'm hosted with <strong><span uk-icon="github"></span>Github Pages</strong>.</p>
     </section>
 
-    <section style="display: none" class="page" id="News">
+    <section style="display: none" class="page bg-dark" id="News">
       <h1>News</h1>
       <p style="opacity: 50%;"><strong>Time based on Git Commit.</strong></p>
 
-      <ul>
+      <ul class="uk-list uk-list-collapse">
+        <li>21 December 2020</li>
+        <ul class="uk-list uk-list-hyphen uk-list-collapse xein-add">
+          <li>Using Bootstrap v5.0.0-Beta1 and UIKitv3 (Yay :D)</li>
+          <li>Planning Making More Beautiful Blog Styled</li>
+        </ul>
+        <ul class="uk-list uk-list-hyphen xein-fix">
+          <li>Updated UI/UX</li>
+        </ul>
+        <ul class="uk-list uk-list-hyphen uk-list-collapse xein-remove">
+          <li>Remove 2 Commit Notes (Not very important)</li>
+          <li>Remove Custom Countdown Script(Using UIKit countdown)</li>
+        </ul>
+        <br>
+
+        <li>12 December 2020</li>
+        <ul class="uk-list uk-list-hyphen uk-list-collapse xein-add">
+          <li>Added Game Section</li>
+          <li>Added csoldjbBar Game (CSSME)</li>
+        </ul>
+        <br>
+
         <li>14 December 2020</li>
-        <ul class="xein-add">
+        <ul class="uk-list uk-list-hyphen xein-add">
           <li>Add csoldjbBar Group Chat, Channel Telegram Link</li>
         </ul>
         <br>
 
-        <li>10 December 2020</li>
-        <ul class="xein-fix">
-          <li>Change div to section</li>
-        </ul>
-        <ul class="xein-remove">
-          <li>Removed Nov8 Changes</li>
-        </ul>
-        <br>
-
-        <li>8 November 2020</li>
-        <ul class="xein-add">
-          <li>Add Font - <a href="https://www.fontspace.com/timeburner-font-f15111">TimeBurner</a></li>       
-        </ul>
-        <ul class="xein-fix">
-          <li>Change Body Font to <a href="https://www.fontspace.com/timeburner-font-f15111">TimeBurner</a></li>
-        </ul>
-        <br>
-
         <li>31 October 2020</li>
-        <ul class="xein-add">
+        <ul class="uk-list uk-list-hyphen uk-list-collapse xein-add">
           <li>Add Simplified Chinese Site</li>
           <li>Add Work-In-Progress status</li>
         </ul>
-        <ul class="xein-fix">
+        <ul class="uk-list uk-list-hyphen uk-list-collapse xein-fix">
           <li>Changed Color Scheme</li>
           <li>Changed To Grid To Fix Centered Problem</li>
           <li>Fix Footer Hidden by Script</li>
         </ul>
-        <ul class="xein-remove">
+        <ul class="uk-list uk-list-hyphen uk-list-collapse xein-remove">
           <li>This is Remove Color Test</li>
         </ul>
         <br>
 
         <li>28 October 2020</li>
-        <ul class="xein-fix">
+        <ul class="uk-list uk-list-hyphen xein-fix">
           <li>More Improved on Styles, Visuals, Navigator and more.</li>
         </ul>
         <br>
 
         <li>27 October 2020</li>
-        <ul class="xein-fix">
+        <ul class="uk-list uk-list-hyphen xein-fix">
           <li>Improved on Layout, UI, UX and more</li>
         </ul>
         <br>
 
         <li>26 October 2020</li>
-        <ul class="xein-add">
+        <ul class="uk-list uk-list-hyphen xein-add">
           <li>Created This Website</li>
         </ul>
       </ul>
@@ -119,12 +162,12 @@
       <ul>
         <li>Custom OpenVPN Client (Local Area Network)</li>
         <li>Custom OpenVPN Server (For Client)</li>
-        <li><a href="https://github.com/HowToDoThis?tab=repositories"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/github.svg"/>Github</a></li>
+        <li><a href="https://github.com/HowToDoThis?tab=repositories"><span uk-icon="github"></span>Github</a></li>
       </ul>
     </section>
 
     <section style="display: none" class="page" id="Game">
-      <h1>Counter-Strike: Strawberry Milk Edition</h1>
+      <h1 class="text-white">Counter-Strike: Strawberry Milk Edition</h1>
       <p>Download At: <a href="https://cssmekr.blogspot.com/"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/blogger.svg">Official Blogger</a> or <a href="https://jq.qq.com/?_wv=1027&k=UcATsVgH"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/tencentqq.svg">Official China QQ Group</a></p>
       <p>Lastest Weapon Data: <a href="game/weapons.ini">Weapon.ini</a> or <a href="game/smesearch.html">Search</a></p>
     </section>
@@ -136,25 +179,65 @@
         <li>On The Way (For Project 2)</li>
       </ul>
 
-      <div class="page xein-wip" id="Server">  
+      <div class="page xein-wip">
         <h1>Under Construction</h1>
         <hr>
-        <p id="estimateDate2" style="font-size: 24px;">-1s</p>  
-        <br>
-        <br>
+
+        <div class="uk-flex-center uk-grid-small uk-grid-row-small" uk-grid uk-countdown="date: Dec 31 2020 00:00:00 GMT+0800">        
+          <div>
+            <div class="uk-countdown-number uk-countdown-days"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+          </div>
+          <div class="uk-countdown-separator">:</div>
+          <div>
+            <div class="uk-countdown-number uk-countdown-hours"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+          </div>
+          <div class="uk-countdown-separator">:</div>
+          <div>
+            <div class="uk-countdown-number uk-countdown-minutes"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+          </div>
+          <div class="uk-countdown-separator">:</div>
+          <div>
+            <div class="uk-countdown-number uk-countdown-seconds"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section style="display: none" class="page xein-wip" id="Donate">
       <h1>Under Construction</h1>
-      <hr>
-      <p id="estimateDate1" style="font-size: 24px;">-1s</p>
+      <hr>    
+
+      <div class="uk-flex-center uk-grid-small uk-grid-row-small" uk-grid uk-countdown="date: Dec 31 2020 00:00:00 GMT+0800">        
+        <div>
+          <div class="uk-countdown-number uk-countdown-days"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-hours"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-minutes"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-seconds"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+        </div>
+      </div>
     </section>
 
     <section style="display: none" class="page" id="About">
       <p>Contact me at:</p>
       <ul>
-        <li><a href="https://github.com/HowToDoThis"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"/>Github</a></li>
+        <li><a href="https://github.com/HowToDoThis"><span uk-icon="github"></span>Github</a></li>
         <li><a href="https://t.me/NekoMeow0708"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/telegram.svg"/>Telegram</a></li>
       </ul>
       
@@ -165,18 +248,24 @@
       </ul>
     </section>
    
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+      <div class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2020 NekoMeow.<br>
+          <strong>Special thanks to: 
+            <a href="https://github.com/">Github</a> &middot; 
+            <a href="https://www.cloudflare.com/">Cloudflare</a> &middot; 
+            <a href="https://getbootstrap.com/">Bootstrap 5</a> &middot; 
+            <a href="https://getuikit.com/">UIKit</a>
+          </strong></p>  
+      </div>
+    </footer>
+
     <!-- Scripts -->
 
     <!-- Active Button -->
     <script src="script/updateNavBtn.js"></script>
-    <!-- Countdown Script -->
-    <script src="script/countdown.js"></script>
-
   </body>
-
-  <footer>
-    <p><strong>Thanks To Github Hosting This Website</strong></p>
-    <p><strong>By NekoMeow</strong></p>  
-  </footer> 
 
 </html>

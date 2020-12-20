@@ -1,4 +1,4 @@
-var btns = document.getElementById("topNav").getElementsByClassName("navBtn");
+var btns = document.getElementById("navbarMain").getElementsByClassName("nav-link");
 
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
