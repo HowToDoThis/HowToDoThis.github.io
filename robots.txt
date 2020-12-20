@@ -19,8 +19,10 @@
 #  \______________________________/
 
 
-User-agent: *
-Disallow: /*__*
+User-agent:	*
+Disallow:	/*__*
+Allow:		/game/
+Allow:		/zh-CN/
 
 #              ________
 #   __,_,     |        |
